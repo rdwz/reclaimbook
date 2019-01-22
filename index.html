@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Büchergenerator</title>
+	<meta property="og:title" content="Büchergenerator" />
+	<meta property="og:description" content="Generiere dein eigenes reclamartiges Cover!" />	
+	<meta property="og:url" content="http://thepablo.life/" />
+	<meta property="og:image" content="http://thepablo.life/i/thepablolife.png" />
+	<meta property="og:type" content="website" />
+	<meta name="viewport" content="initial-scale=1,user-scalable=no">
+	<meta name="description" content="Generiere dein eigenes reclamartiges Cover!">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="theme-color" content="#000000">
+	<link rel="icon" type="image/x-icon" href="i/yellow.png">
+	<link rel="apple-touch-icon-precomposed" href="i/yellow.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="i/yellow.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="i/yellow.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="i/yellow.png" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/size.js" ></script>
+	<script type="text/javascript" src="js/functions.js" ></script>
+</head>
+<body class="no-touch">
+
+<div id="container" class="verticalAlign">
+	<div id="columns">
+		<div id="form" class="verticalAlign">
+			<div class="bookTitle">
+				<input type="text" id="textField" value="Der Process" />
+			</div>
+			<div class="cf">
+				<div class="generateWrap">
+					Zufallstitel generieren
+					<input type="file" id="generateText" onchange=""  />
+				</div>
+				<input id="download" type="button" value="Bild speichern" onclick="download()" />
+			</div>
+			<div><img id="imagePreview" style="display: none;"/></div>
+		</div>
+	
+		<div id="wrapper">
+			<div id="canvasWrap">
+				<canvas id="canvas" width="643" height="1000" style="background: #ffe303;">
+				  Dein Browser muss mit HTML 5 kompatibel sein, um diese App zu benutzen.
+				</canvas>
+			</div>
+			<div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
