@@ -140,7 +140,7 @@ input#download:active, .generateWrap:active {
 }
 
 #canvasWrap {
-	height: 512px;
+	height: 480px;
 	position: relative;
 }
 

@@ -7,11 +7,11 @@ function drawText(text) {
   var ctx = c.getContext('2d');
   ctx.clearRect(0, 0, c.width, c.height);
   ctx.fillStyle = "#ffe303";
-  ctx.clearRect(20, 20, c.width, c.height);
-  ctx.fillStyle = "#fffff";
-  ctx.fillRect(0, 0, c.width, c.height);
+  ctx.fillStyle = "rgb(255, 255, 255)";
+  ctx.fillRect(50, 50, 540, c.height/4);
   ctx.fillStyle = "rgb(0, 0, 0)";
-
+  ctx.fillRect(50, 300, 540, 10);
+  ctx.fillStyle = "rgb(0, 0, 0)";
 
   var destinationWidth = 236.0;
   var destinationHeight = 165.0;
@@ -28,34 +28,11 @@ function drawText(text) {
   var yToOffset = (destinationHeight - scaledHeight) / 2.0;
   
   ctx.drawImage(img, 0, 0, img.width, img.height, 134, 788, destinationWidth, destinationHeight);
-  
-  ctx.font = 'bold 27px Times New Roman';
+  ctx.font = 'normal 45px Playfair Display, serif';
 
-  var text = text.replace(/ /g, '  ');
-  
-  for (var j = 0; j <= 2; j++) {
-    for (var i = 0; i <= 1; i++) {
-      function at(row, column) {
-        return j == column;
-      } 
-    
-      function adjust(number, amount, condition) {
-        if (condition) 
-          return number + amount;
-        else
-          return number;
-      }
-    
-      var offsetX = 84.0;
-      var offsetY = 88.0;
-
-      var jOffset = 0;
-      if (j == 1) {
-        jOffset = 291;
-      } 
-      ctx.fillText(text, offsetX + jOffset, offsetY);
-    }
-  }
+  var offsetX = 84.0;
+  var offsetY = 120.0;
+  ctx.fillText(text, offsetX, offsetY);
 }
 
 function updateText() {
@@ -64,8 +41,8 @@ function updateText() {
 }
 
 function download() {
-  //var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
-  //window.location.href = image;
+  var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+  window.location.href = image;
   location.href = ge('canvas').toDataURL();
 }
 
