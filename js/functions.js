@@ -28,7 +28,7 @@ function drawText(text) {
   var yToOffset = (destinationHeight - scaledHeight) / 2.0;
   
   ctx.drawImage(img, 0, 0, img.width, img.height, 134, 788, destinationWidth, destinationHeight);
-  ctx.font = 'normal 45px Playfair Display, serif';
+  ctx.font = 'normal 45px Playfair Display';
 
   var offsetX = 84.0;
   var offsetY = 120.0;
