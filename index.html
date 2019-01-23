@@ -29,14 +29,14 @@
 	<div id="columns">
 		<div id="form" class="verticalAlign">
 			<div class="bookTitle">
-				<input type="text" id="textField" value="Der Process" />
+				<input type="text" id="textField" maxlength="22" placeholder="Dein Buchtitel" />
 			</div>
 			<div class="cf">
 				<div class="generateWrap">
 					Zufallstitel generieren
 					<input type="file" id="generateText" onchange=""  />
 				</div>
-				<input id="download" type="button" value="Bild speichern" onclick="download()" />
+				<input id="download" type="button" value="Bild speichern" onclick="download_image()" />
 			</div>
 			<div><img id="imagePreview" style="display: none;"/></div>
 		</div>
