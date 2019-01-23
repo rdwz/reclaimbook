@@ -7,7 +7,7 @@ var titles = [
 ];
 
 
-function newTitle() {
+function newTitle(){
     var randomNumber = Math.floor(Math.random() * (titles.length)); 
     var text = $('#textField');
     text.val(titles[randomNumber]);

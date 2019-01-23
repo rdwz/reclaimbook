@@ -97,7 +97,7 @@ input[type="text"] {
 	font-weight: 500;
 }
 
-input#download, .generateWrap {
+input#download, #generateText {
 	font-size: 16px;
 	border: 2px solid white;
 	padding: 12px 0;
@@ -119,24 +119,12 @@ input#download, .generateWrap {
 	-webkit-appearance: none;
 }
 
-input#download:active, .generateWrap:active {
+input#download:active, #generateText:active {
 	opacity: .5;
 }
 
-.generateWrap {
+#generateText {
 	margin-right: 12px;
-}
-
-.generateWrap input[type="file"] {
-	opacity: 0;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	cursor: pointer;
-	outline: none;
-	border: none;
 }
 
 #canvasWrap {
@@ -199,7 +187,7 @@ input#download:active, .generateWrap:active {
 		padding: 0 12px;
 	}
 	
-	input#download, .generateWrap {
+	input#download, #generateText {
 		font-size: 14px;
 		line-height: 18px;	
 	}

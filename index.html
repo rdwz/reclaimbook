@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Büchergenerator</title>
-	<meta property="og:title" content="Büchergenerator" />
+	<title>Covergenerator</title>
+	<meta property="og:title" content="Covergenerator" />
 	<meta property="og:description" content="Generiere dein eigenes reclamartiges Cover!" />	
-	<meta property="og:url" content="http://thepablo.life/" />
-	<meta property="og:image" content="http://thepablo.life/i/thepablolife.png" />
+	<meta property="og:url" content="https://mhaeussermann.github.io/reclaimbook" />
+	<meta property="og:image" content="https://mhaeussermann.github.io/reclaimbook/i/thepablolife.png" />
 	<meta property="og:type" content="website" />
 	<meta name="viewport" content="initial-scale=1,user-scalable=no">
 	<meta name="description" content="Generiere dein eigenes reclamartiges Cover!">
@@ -21,10 +21,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script type="text/javascript" src="js/size.js" ></script>
 	<script type="text/javascript" src="js/functions.js" ></script>
+	<script type="text/javascript" src="js/titles.js" ></script>
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 </head>
 <body class="no-touch">
-
 <div id="container" class="verticalAlign">
 	<div id="columns">
 		<div id="form" class="verticalAlign">
@@ -32,11 +32,10 @@
 				<input type="text" id="textField" maxlength="22" placeholder="Dein Buchtitel" />
 			</div>
 			<div class="cf">
-				<div class="generateWrap">
-					Zufallstitel generieren
-					<input type="file" id="generateText" onchange=""  />
+				<div>
+				<input type="button" id="generateText" value="Vorschlag" onclick="newTitle()" />
 				</div>
-				<input id="download" type="button" value="Bild speichern" onclick="download_image()" />
+				<input type="button" id="download" value="Bild speichern" onclick="download_image()" />
 			</div>
 			<div><img id="imagePreview" style="display: none;"/></div>
 		</div>

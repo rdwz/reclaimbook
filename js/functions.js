@@ -41,7 +41,7 @@ function updateText() {
 }
 
 function download_image(){
-  var canvas = document.getElementById("canvas");
+  var canvas = ge("canvas");
   image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
   var link = document.createElement('a');
   link.download = "mein-buchcover.png";
