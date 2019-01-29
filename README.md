@@ -7,4 +7,4 @@ Just a quick little web app to create Reclam-like book covers using HTML5, CSS a
 
 # Problems
 * Right now, there is a limit of 21 characters for the title because line-breaks are not yet implemented.
-* It seems like canvas writing does not work on iOS devices.
+* Scaling might be subpar on some mobile devices.

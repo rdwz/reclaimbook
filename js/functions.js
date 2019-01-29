@@ -13,21 +13,6 @@ function drawText(text) {
   ctx.fillRect(50, 300, 540, 10);
   ctx.fillStyle = "rgb(0, 0, 0)";
 
-  var destinationWidth = 236.0;
-  var destinationHeight = 165.0;
-  
-  var img = ge('imagePreview');
-  var hRatio = img.width / destinationWidth;
-  var vRatio = img.height / destinationHeight;
-  var ratio = Math.min(hRatio, vRatio);
-  
-  var scaledWidth = img.width / ratio;
-  var scaledHeight = img.height / ratio;
-  
-  var xToOffset = (destinationWidth - scaledWidth) / 2.0;
-  var yToOffset = (destinationHeight - scaledHeight) / 2.0;
-  
-  ctx.drawImage(img, 0, 0, img.width, img.height, 134, 788, destinationWidth, destinationHeight);
   ctx.font = 'normal 45px Playfair Display';
 
   var offsetX = 84.0;
